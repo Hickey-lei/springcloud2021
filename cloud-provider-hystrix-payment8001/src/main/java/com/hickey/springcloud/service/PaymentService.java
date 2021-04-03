@@ -1,4 +1,7 @@
 package com.hickey.springcloud.service;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
 public interface PaymentService {
 
 
@@ -6,5 +9,7 @@ public interface PaymentService {
 
 
     public String paymentInfo_TimeOut(Integer id);
+
+    public String PaymentCircuitBreaker(Integer id);
 
 }
